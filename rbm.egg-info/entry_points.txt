@@ -1,0 +1,3 @@
+[console_scripts]
+rbm = rbm.scripts.rbm:main
+

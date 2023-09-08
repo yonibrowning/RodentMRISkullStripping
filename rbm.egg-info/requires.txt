@@ -1,0 +1,4 @@
+keras>=2.3.0
+SimpleITK>=1.2.4
+numpy>=1.18.0
+tensorflow>=2.0.0

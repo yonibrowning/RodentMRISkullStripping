@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rbm
+Version: 0.0.3
+Summary: Rodent Brain Masking Tool with Keras 2D Unet
+Home-page: UNKNOWN
+Author: Not specified yet
+Author-email: 
+Maintainer: SungHo Lee
+Maintainer-email: shlee@unc.edu
+License: GNLv3
+Keywords: rodent brain masking
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >3.5, <3.8
+
+UNKNOWN
+

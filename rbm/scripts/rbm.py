@@ -11,7 +11,7 @@ import argparse
 
 
 def brain_seg_prediction(input_path, output_path, voxsize,
-                         pre_paras, keras_paras):
+                         pre_paras, keras_paras,transpose = None):
     # load model
     seg_net = load_model(keras_paras.model_path,
                          custom_objects={'dice_coef_loss': dice_coef_loss,
@@ -25,6 +25,10 @@ def brain_seg_prediction(input_path, output_path, voxsize,
                                     interpolator=sitk.sitkLinear)
 
     img_array = sitk.GetArrayFromImage(resampled_imgobj)
+    
+    if transpose:
+        img_array.transpose(transpose)
+
     normed_array = min_max_normalization(img_array)
     out_label_map, out_likelihood_map = out_LabelHot_map_2D(normed_array,
                                                             seg_net,
